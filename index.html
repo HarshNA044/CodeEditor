@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Harsh's Code Editor</h1>
+            <button id='htmlbutton' onclick="codeboxhandler('htmlbutton')">HTML</button>
+            <button id='cssbutton' onclick="codeboxhandler('cssbutton')">CSS</button>
+            <button id='jsbutton' onclick="codeboxhandler('jsbutton')">JS</button><br><br>
+            <div class="code-container">
+                <div id="htmlbox">
+                    <textarea id="htmlcode" oninput="runcode()"></textarea>
+                </div>
+                <div id="cssbox">
+                <textarea id="csscode" oninput="runcode()"></textarea></div>
+                <div id="jsbox">
+                    <textarea id="jscode" oninput="runcode()"></textarea>
+                </div>
+            </div><br><br>
+            <iframe id="outputbox"></iframe>
+            <script src="script.js"></script>
+        </body>
+</html>
